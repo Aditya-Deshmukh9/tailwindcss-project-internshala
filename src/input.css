@@ -73,3 +73,10 @@
 .animate-progress {
     animation: progress 1.5s ease forwards;
 }
+
+ .overlay:target {
+        display: block;
+    }
+    .overlay {
+        display: none;
+    }

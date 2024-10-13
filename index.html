@@ -83,9 +83,16 @@
                                 </li>
                                 <li class="group">
                                     <a
-                                        href="#services"
+                                        href="#certificates"
                                         class="mx-8 flex py-2 text-base font-semibold text-dark group-hover:text-primary dark:text-white"
-                                        >Services</a
+                                        >Certificates</a
+                                    >
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#projects"
+                                        class="mx-8 flex py-2 text-base font-semibold text-dark group-hover:text-primary dark:text-white"
+                                        >Projects</a
                                     >
                                 </li>
                                 <li class="group">
@@ -277,7 +284,7 @@
         </section>
         <!-- About Section End -->
 
-        <!-- Portfolio Section Start -->
+        <!-- Skills Section Start -->
         <section id="skills" class="bg-slate-100 pb-16 pt-36 dark:bg-slate-800">
             <div class="container">
                 <section class="skills-section py-8 bg-gray-800 text-white">
@@ -286,9 +293,6 @@
                         <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
                             My Skills
                         </h2>
-                        <p class="text-md font-medium text-secondary md:text-lg">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, sunt?
-                        </p>
                     </div>
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -528,7 +532,298 @@
                 </section>
             </div>
         </section>
-        <!-- Portfolio Section End -->
+        <!-- Skills Section End -->
+
+        <!-- Certificate Section Start -->
+        <section id="certificates" class="bg-slate-100 pb-16 pt-36 dark:bg-dark">
+            <div class="container mx-auto">
+                <section class="skills-section py-8 bg-dark text-white">
+                    <div class="mx-auto mb-16 max-w-xl text-center">
+                        <h4 class="mb-2 text-lg font-semibold text-primary">My Certificates</h4>
+                        <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
+                            My Certificates
+                        </h2>
+                    </div>
+
+                    <div class="bg-dark py-12 px-6">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Certification Card 1 -->
+                            <div class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center">
+                                <img
+                                    src="./images/certificate1.jpg"
+                                    alt="Certification 1"
+                                    class="mx-auto mb-4 rounded-lg"
+                                />
+                                <h3 class="text-xl font-bold text-white mb-2">Certification 1</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Description of certification highlighting skills gained and knowledge acquired.
+                                </p>
+                                <!-- Button to Open Certificate -->
+                                <a
+                                    class="rounded-full bg-primary px-4 py-2 my-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                                    href="#popup1"
+                                    >Read more</a
+                                >
+                            </div>
+
+                            <!-- Certification Card 2 -->
+                            <div class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center">
+                                <img
+                                    src="./images/certificate2.webp"
+                                    alt="Certification 2"
+                                    class="mx-auto mb-4 rounded-lg"
+                                />
+                                <h3 class="text-xl font-bold text-white mb-2">Certification 2</h3>
+                                <p class="text-gray-300 mb-4">
+                                    Description of certification with the areas covered and the skills learned.
+                                </p>
+                                <a
+                                    class="rounded-full bg-primary px-4 py-2 my-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                                    href="#popup2"
+                                    >Read more</a
+                                >
+                            </div>
+
+                            <!-- Certification Card 3 -->
+                            <div class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center">
+                                <img
+                                    src="./images/certificate1.jpg"
+                                    alt="Certification 3"
+                                    class="mx-auto mb-4 rounded-lg"
+                                />
+                                <h3 class="text-xl font-bold text-white mb-2">Certification 3</h3>
+                                <p class="text-gray-300 mb-8">
+                                    A brief description explaining the certification and how it relates to your skills.
+                                </p>
+                                <a
+                                    class="rounded-full bg-primary px-4 py-2 my-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                                    href="#popup3"
+                                    >Read more</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Popup for Certification 1 -->
+        <div
+            id="popup1"
+            class="overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 hidden transition-opacity duration-500"
+        >
+            <div class="popup mx-auto my-20 bg-white rounded-lg shadow-lg w-1/3 relative p-6">
+                <h2 class="text-2xl font-semibold mb-4">Certification 1</h2>
+                <a class="close absolute top-4 right-4 text-2xl text-gray-700 hover:text-green-600" href="#certificates"
+                    >&times;</a
+                >
+                <div class="content">
+                    <img src="./images/certificate1.jpg" alt="Certification 1" class="mx-auto mb-4" />
+                    <p>Details about Certification 1 go here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup for Certification 2 -->
+        <div
+            id="popup2"
+            class="overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 hidden transition-opacity duration-500"
+        >
+            <div class="popup mx-auto my-20 bg-white rounded-lg shadow-lg w-1/3 relative p-6">
+                <h2 class="text-2xl font-semibold mb-4">Certification 2</h2>
+                <a class="close absolute top-4 right-4 text-2xl text-gray-700 hover:text-green-600" href="#certificates"
+                    >&times;</a
+                >
+                <div class="content">
+                    <img src="./images/certificate2.webp" alt="Certification 2" class="mx-auto mb-4" />
+                    <p>Details about Certification 2 go here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup for Certification 3 -->
+        <div
+            id="popup3"
+            class="overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 hidden transition-opacity duration-500"
+        >
+            <div class="popup mx-auto my-20 bg-white rounded-lg shadow-lg w-1/3 relative p-6">
+                <h2 class="text-2xl font-semibold mb-4">Certification 3</h2>
+                <a class="close absolute top-4 right-4 text-2xl text-gray-700 hover:text-green-600" href="#certificates"
+                    >&times;</a
+                >
+                <div class="content">
+                    <img src="./images/certificate1.jpg" alt="Certification 3" class="mx-auto mb-4" />
+                    <p>Details about Certification 3 go here.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section Start -->
+        <section id="projects" class="pb-32 pt-14 dark:bg-dark">
+            <div class="container">
+                <div class="w-full px-4">
+                    <div class="mx-auto mb-16 max-w-xl text-center">
+                        <h4 class="mb-2 text-lg font-semibold text-primary">Projects</h4>
+                        <h2 class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">Projects</h2>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Loop through projectData here -->
+                    <div
+                        class="group max-w-sm rounded overflow-hidden shadow-lg bg-slate-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            class="w-full h-48 object-cover"
+                            src="https://ik.imagekit.io/rx4tj1rzo/tr:h-240px,w-full/project1.webp"
+                            alt="ContentGenie"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-white">ContentGenie</div>
+                            <p class="text-slate-400 text-base">
+                                Using React Js, Typescript, Tailwind css and Redux Toolkit for State management. Here I
+                                create Full Ai Content Genrator Dashboard with response edit functionality
+                            </p>
+                        </div>
+                        <div class="px-6 pb-2">
+                            <a
+                                href="https://github.com/Aditya-Deshmukh9/ai-content-generator"
+                                target="_blank"
+                                class="text-primary hover:text-secondary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="group max-w-sm rounded overflow-hidden shadow-lg bg-slate-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            class="w-full h-48 object-cover"
+                            src="https://ik.imagekit.io/rx4tj1rzo/tr:h-240px,w-full/project4.webp"
+                            alt="Full Stack Grocery Store"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-white">Full Stack Grocery Store</div>
+                            <p class="text-slate-400 text-base">
+                                This project is an online grocery store application built with Next.js, Tailwind CSS,
+                                and Shadcn UI. It utilizes Razorpay Payment Gateway for processing online payments and
+                                Axios for making HTTP requests. Check it out!
+                            </p>
+                        </div>
+                        <div class="px-6 pb-2">
+                            <a
+                                href="https://github.com/Aditya-Deshmukh9/MERN-Grocery-Store"
+                                target="_blank"
+                                class="text-primary hover:text-secondary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="group max-w-sm rounded overflow-hidden shadow-lg bg-slate-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            class="w-full h-48 object-cover"
+                            src="https://ik.imagekit.io/rx4tj1rzo/tr:h-240px,w-full/ecommerce.png"
+                            alt="Full Stack Ecommerce"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-white">Full Stack Ecommerce</div>
+                            <p class="text-slate-400 text-base">
+                                Our E-commerce Website offers a seamless shopping experience with a wide range of
+                                products, secure payments, detailed descriptions, and easy navigation. Create an account
+                                to track orders, save favorites, and access exclusive discounts.
+                            </p>
+                        </div>
+                        <div class="px-6 pb-2">
+                            <a
+                                href="https://github.com/Aditya-Deshmukh9/Ecommerce"
+                                target="_blank"
+                                class="text-primary hover:text-secondary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="group max-w-sm rounded overflow-hidden shadow-lg bg-slate-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            class="w-full h-48 object-cover"
+                            src="https://ik.imagekit.io/rx4tj1rzo/tr:h-240px,w-full/walmart.png"
+                            alt="Walmart Clone"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-white">Walmart Clone</div>
+                            <p class="text-slate-400 text-base">
+                                Walmart clone with Nextjs, Zustand, tailwind css, shadcn UI
+                            </p>
+                        </div>
+                        <div class="px-6 pb-2">
+                            <a
+                                href="https://github.com/Aditya-Deshmukh9/walmart-clone"
+                                target="_blank"
+                                class="text-primary hover:text-secondary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="group max-w-sm rounded overflow-hidden shadow-lg bg-slate-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            class="w-full h-48 object-cover"
+                            src="https://ik.imagekit.io/rx4tj1rzo/tr:h-240px,w-full/project3.webp"
+                            alt="Live Forecast Weather"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-white">Live Forecast Weather</div>
+                            <p class="text-slate-400 text-base">
+                                Live Forecast Weather app built with MERN stack, integrating OpenweatherApi for
+                                real-time updates, with 100+ regular users
+                            </p>
+                        </div>
+                        <div class="px-6 pb-2">
+                            <a
+                                href="https://github.com/Aditya-Deshmukh9/Live-weather-frontend"
+                                target="_blank"
+                                class="text-primary hover:text-secondary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+
+                    <div
+                        class="group max-w-sm rounded overflow-hidden shadow-lg bg-slate-800 transition-transform duration-300 hover:scale-105"
+                    >
+                        <img
+                            class="w-full h-48 object-cover"
+                            src="https://ik.imagekit.io/rx4tj1rzo/tr:h-240px,w-full/project2.webp"
+                            alt="E-Cart"
+                        />
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2 text-white">E-Cart</div>
+                            <p class="text-slate-400 text-base">
+                                Using React Js, Tailwind css and Context Api for State management. Here I create Full
+                                Cart functionality, product add in Search the products etc
+                            </p>
+                        </div>
+                        <div class="px-6 pb-2">
+                            <a
+                                href="https://github.com/Aditya-Deshmukh9/E-cart"
+                                target="_blank"
+                                class="text-primary hover:text-secondary"
+                                >View Project</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section End -->
 
         <!-- Contact Section Start -->
         <section id="contact" class="pb-32 pt-36 dark:bg-slate-800">
@@ -586,34 +881,10 @@
         <!-- Footer Start -->
         <footer class="bg-dark pt-4">
             <div class="container">
-                <div class="w-full border-t border-slate-700 pt-10">
+                <div class="w-full border-t border-slate-700 pt-6 py-4">
                     <div class="mb-5 flex items-center justify-center">
-                        <!-- Youtube -->
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                        >
-                            <svg
-                                role="img"
-                                width="20"
-                                class="fill-current"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>YouTube</title>
-                                <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                                />
-                            </svg>
-                        </a>
-
                         <!-- Instagram -->
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                        >
+                        <a href="#" target="_blank" class="nav-links">
                             <svg
                                 role="img"
                                 width="20"
@@ -629,11 +900,7 @@
                         </a>
 
                         <!-- Twitter -->
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                        >
+                        <a href="#" target="_blank" class="nav-links">
                             <svg
                                 role="img"
                                 width="20"
@@ -648,32 +915,8 @@
                             </svg>
                         </a>
 
-                        <!-- Tiktok -->
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                        >
-                            <svg
-                                role="img"
-                                width="20"
-                                class="fill-current"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <title>TikTok</title>
-                                <path
-                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
-                                />
-                            </svg>
-                        </a>
-
                         <!-- LinkedIn -->
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                        >
+                        <a href="#" target="_blank" class="nav-links">
                             <svg
                                 role="img"
                                 width="20"
@@ -689,11 +932,7 @@
                         </a>
 
                         <!-- Github -->
-                        <a
-                            href="#"
-                            target="_blank"
-                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-                        >
+                        <a href="#" target="_blank" class="nav-links">
                             <svg
                                 role="img"
                                 width="20"
