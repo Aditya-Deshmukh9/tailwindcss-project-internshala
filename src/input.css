@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    @apply mr-3 flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white;
+}
+
+@keyframes progressBarAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: var(--progress-width); /* This custom property will control the final width */
+    }
+}
+
+.progress-bar {
+    animation: progressBarAnimation 2s ease-out forwards;
+}
+
+/* Add this to your CSS or <style> block */
+.circular-progress {
+    background: conic-gradient(#4b7bec 0deg, #4b7bec var(--progress-deg, 0deg), #e0e0e0 var(--progress-deg, 0deg));
+    animation: progress-fill 2s forwards;
+}
+
+@keyframes progress-fill {
+    from {
+        --progress-deg: 0deg;
+    }
+    to {
+        --progress-deg: 288deg; /* Adjust this value based on percentage */
+    }
+}
+
+/* Animation for the circular progress bar */
+@keyframes progress-animation {
+    0% {
+        stroke-dashoffset: 314;
+    }
+    100% {
+        stroke-dashoffset: calc(314 - (314 * 80 / 100)); /* Adjust 80 to the percentage you want */
+    }
+}
+
+.animate-progress {
+    animation: progress-animation 2s ease forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dashoffset: 283; /* Circle starts fully empty */
+    }
+    100% {
+        stroke-dashoffset: calc(283 - (283 * 70 / 100)); /* Circle fills to 70% */
+    }
+}
+
+/* Apply animation to progress circle */
+.animate-progress {
+    animation: progress 1.5s ease forwards;
+}
