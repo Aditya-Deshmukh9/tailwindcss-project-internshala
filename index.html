@@ -150,23 +150,23 @@
         </header>
 
         <!-- Hero Section Start -->
-        <section id="home" class="p-32 dark:bg-dark">
-            <div class="container h-full">
-                <div class="flex flex-wrap h-full">
+        <section id="home" class="pt-16 md:pt-32 dark:bg-dark">
+            <div class="container h-full mx-auto">
+                <div class="flex flex-col-reverse md:flex-row items-center justify-between h-full">
                     <!-- Heading and Intro Text -->
-                    <div class="w-full self-center px-4 lg:w-1/2">
+                    <div class="w-full md:w-1/2 lg:w-1/2 px-4 text-center md:text-left">
                         <h1 class="text-base font-semibold text-primary md:text-xl">
                             Hello Everyone 👋, I'm
                             <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">
                                 Aditya Deshmukh
                             </span>
                         </h1>
-                        <p class="mb-2 mt-3 text-sm text-secondary font-medium italic leading-relaxed lg:text-2xl">
+                        <p class="mb-4 mt-3 text-sm text-secondary font-medium italic leading-relaxed lg:text-2xl">
                             Building innovative and scalable web applications, one project at a time.
                         </p>
 
                         <!-- Social Icons -->
-                        <div class="flex py-5 items-center">
+                        <div class="flex py-5 mb-3 items-center justify-center md:justify-start">
                             <!-- Instagram -->
                             <a href="#" target="_blank" class="nav-links">
                                 <svg
@@ -236,14 +236,13 @@
                         <a
                             href="https://drive.google.com/file/d/1e7NPwjcQLUJVumEgxkUCiUNcIg7PlyuB/view"
                             target="_blank"
-                            class="rounded-full bg-primary px-8 py-3 mt-10 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                            class="rounded-full bg-primary px-8 py-3 mt-6 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                             >Resume</a
                         >
                     </div>
-
                     <!-- Profile Image with Animation/Transition -->
-                    <div class="w-full self-end px-4 lg:w-1/2">
-                        <div class="relative mt-10 lg:right-0 lg:mt-9">
+                    <div class="w-full md:w-1/2 lg:w-1/2 px-4 mt-8 md:mt-0">
+                        <div class="relative">
                             <img
                                 src="/images/home-image.png"
                                 alt="Aditya's Profile"
@@ -386,14 +385,14 @@
                         </div>
 
                         <!-- Right Side: Soft Skills (Circular Progress Bars) -->
-                        <div class="grid grid-cols-3 grid-rows-4 gap-4 gap-y-6">
-                            <!-- col-start-1 col-end-3 row-start-1 row-end-2 -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6">
+                            <!-- Soft Skill 1 - Creativity -->
                             <div
-                                class="flex items-center col-start-1 col-end-3 row-start-1 row-end-2 max-h-40 px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
+                                class="flex items-center col-start-1 col-end-3 row-start-1 row-end-2 max-h-40 px-4 md:px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
                             >
                                 <!-- Circular Progress Bar -->
-                                <div class="relative flex items-center justify-center w-24 h-24">
-                                    <svg class="w-24 h-24 transform rotate-180">
+                                <div class="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24">
+                                    <svg class="w-20 h-20 md:w-24 md:h-24 transform rotate-180">
                                         <circle
                                             cx="50%"
                                             cy="50%"
@@ -415,20 +414,23 @@
                                         />
                                     </svg>
                                     <!-- Dynamic percentage text inside circle -->
-                                    <span class="absolute text-xl font-semibold text-primary">70%</span>
+                                    <span class="absolute text-lg md:text-xl font-semibold text-primary">70%</span>
                                 </div>
 
                                 <!-- Right-side text -->
-                                <p class="ml-6 text-white text-xl font-semibold">Creativity</p>
-                                <span class="ml-auto text-lg font-semibold text-white hidden sm:block">+20%</span>
+                                <p class="ml-4 md:ml-6 text-white text-lg md:text-xl font-semibold">Creativity</p>
+                                <span class="ml-auto text-sm md:text-lg font-semibold text-white hidden sm:block"
+                                    >+20%</span
+                                >
                             </div>
-                            <!-- col-start-2 col-end-4 row-start-2 row-end-3 Team Work-->
+
+                            <!-- Soft Skill 2 - Team Work -->
                             <div
-                                class="flex items-center col-start-2 col-end-4 row-start-2 row-end-3 max-h-40 px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
+                                class="flex items-center col-start-2 col-end-4 row-start-2 row-end-3 max-h-40 px-4 md:px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
                             >
                                 <!-- Circular Progress Bar -->
-                                <div class="relative flex items-center justify-center w-24 h-24">
-                                    <svg class="w-24 h-24 transform rotate-180">
+                                <div class="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24">
+                                    <svg class="w-20 h-20 md:w-24 md:h-24 transform rotate-180">
                                         <circle
                                             cx="50%"
                                             cy="50%"
@@ -450,20 +452,23 @@
                                         />
                                     </svg>
                                     <!-- Dynamic percentage text inside circle -->
-                                    <span class="absolute text-xl font-semibold text-primary">80%</span>
+                                    <span class="absolute text-lg md:text-xl font-semibold text-primary">80%</span>
                                 </div>
 
                                 <!-- Right-side text -->
-                                <p class="ml-6 text-white text-xl font-semibold">Team Work</p>
-                                <span class="ml-auto text-lg font-semibold text-white hidden sm:block">+40%</span>
+                                <p class="ml-4 md:ml-6 text-white text-lg md:text-xl font-semibold">Team Work</p>
+                                <span class="ml-auto text-sm md:text-lg font-semibold text-white hidden sm:block"
+                                    >+40%</span
+                                >
                             </div>
-                            <!-- col-start-1 col-end-3 row-start-3 row-end-4 -->
+
+                            <!-- Soft Skill 3 - Problem Solving -->
                             <div
-                                class="flex col-start-1 col-end-3 row-start-3 row-end-4 items-center max-h-40 px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
+                                class="flex col-start-1 col-end-3 row-start-3 row-end-4 items-center max-h-40 px-4 md:px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
                             >
                                 <!-- Circular Progress Bar -->
-                                <div class="relative flex items-center justify-center w-24 h-24">
-                                    <svg class="w-24 h-24 transform rotate-180">
+                                <div class="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24">
+                                    <svg class="w-20 h-20 md:w-24 md:h-24 transform rotate-180">
                                         <circle
                                             cx="50%"
                                             cy="50%"
@@ -485,20 +490,23 @@
                                         />
                                     </svg>
                                     <!-- Dynamic percentage text inside circle -->
-                                    <span class="absolute text-xl font-semibold text-primary">75%</span>
+                                    <span class="absolute text-lg md:text-xl font-semibold text-primary">75%</span>
                                 </div>
 
                                 <!-- Right-side text -->
-                                <p class="ml-6 text-white text-xl font-semibold">Problem Solving</p>
-                                <span class="ml-auto text-lg font-semibold text-white hidden sm:block">+30%</span>
+                                <p class="ml-4 md:ml-6 text-white text-lg md:text-xl font-semibold">Problem Solving</p>
+                                <span class="ml-auto text-sm md:text-lg font-semibold text-white hidden sm:block"
+                                    >+30%</span
+                                >
                             </div>
-                            <!-- "col-start-2 col-end-4 row-start-4 row-end-5 -->
+
+                            <!-- Soft Skill 4 - Communication -->
                             <div
-                                class="flex items-center col-start-2 col-end-4 row-start-4 row-end-5 max-h-40 px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
+                                class="flex items-center col-start-2 col-end-4 row-start-4 row-end-5 max-h-40 px-4 md:px-6 bg-dark shadow-lg shadow-slate-700 rounded-2xl h-24"
                             >
                                 <!-- Circular Progress Bar -->
-                                <div class="relative flex items-center justify-center w-24 h-24">
-                                    <svg class="w-24 h-24 transform rotate-180">
+                                <div class="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24">
+                                    <svg class="w-20 h-20 md:w-24 md:h-24 transform rotate-180">
                                         <circle
                                             cx="50%"
                                             cy="50%"
@@ -520,12 +528,14 @@
                                         />
                                     </svg>
                                     <!-- Dynamic percentage text inside circle -->
-                                    <span class="absolute text-xl font-semibold text-primary">60%</span>
+                                    <span class="absolute text-lg md:text-xl font-semibold text-primary">60%</span>
                                 </div>
 
                                 <!-- Right-side text -->
-                                <p class="ml-6 text-white text-xl font-semibold">Communication</p>
-                                <span class="ml-auto text-lg font-semibold text-white hidden sm:block">+15%</span>
+                                <p class="ml-4 md:ml-6 text-white text-lg md:text-xl font-semibold">Communication</p>
+                                <span class="ml-auto text-sm md:text-lg font-semibold text-white hidden sm:block"
+                                    >+15%</span
+                                >
                             </div>
                         </div>
                     </div>
@@ -548,16 +558,16 @@
                     <div class="bg-dark py-12 px-6">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <!-- Certification Card 1 -->
-                            <div class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center">
+                            <div
+                                class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center transition-transform duration-300 hover:scale-105"
+                            >
+                                <h3 class="text-xl font-bold text-white mb-2">Internshala HTML Training</h3>
                                 <img
                                     src="./images/certificate1.jpg"
                                     alt="Certification 1"
                                     class="mx-auto mb-4 rounded-lg"
                                 />
-                                <h3 class="text-xl font-bold text-white mb-2">Certification 1</h3>
-                                <p class="text-gray-300 mb-4">
-                                    Description of certification highlighting skills gained and knowledge acquired.
-                                </p>
+                                <p class="text-gray-300 mb-4">Internshala Traning Certificate 2024</p>
                                 <!-- Button to Open Certificate -->
                                 <a
                                     class="rounded-full bg-primary px-4 py-2 my-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
@@ -567,16 +577,16 @@
                             </div>
 
                             <!-- Certification Card 2 -->
-                            <div class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center">
+                            <div
+                                class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center transition-transform duration-300 hover:scale-105"
+                            >
+                                <h3 class="text-xl font-bold text-white mb-2">Udemy Certificate</h3>
                                 <img
                                     src="./images/certificate2.webp"
                                     alt="Certification 2"
                                     class="mx-auto mb-4 rounded-lg"
                                 />
-                                <h3 class="text-xl font-bold text-white mb-2">Certification 2</h3>
-                                <p class="text-gray-300 mb-4">
-                                    Description of certification with the areas covered and the skills learned.
-                                </p>
+                                <p class="text-gray-300 mb-4">Udemy Full Stack Web Development Bootcamp 2023</p>
                                 <a
                                     class="rounded-full bg-primary px-4 py-2 my-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                                     href="#popup2"
@@ -585,16 +595,16 @@
                             </div>
 
                             <!-- Certification Card 3 -->
-                            <div class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center">
+                            <div
+                                class="bg-gray-800 rounded-lg shadow-lg p-3 shadow-slate-700 text-center transition-transform duration-300 hover:scale-105"
+                            >
+                                <h3 class="text-xl font-bold text-white mb-2">Internshala CSS Certificate</h3>
                                 <img
                                     src="./images/certificate1.jpg"
                                     alt="Certification 3"
                                     class="mx-auto mb-4 rounded-lg"
                                 />
-                                <h3 class="text-xl font-bold text-white mb-2">Certification 3</h3>
-                                <p class="text-gray-300 mb-8">
-                                    A brief description explaining the certification and how it relates to your skills.
-                                </p>
+                                <p class="text-gray-300 mb-8">Internshala Traning Certificate 2024</p>
                                 <a
                                     class="rounded-full bg-primary px-4 py-2 my-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
                                     href="#popup3"
@@ -825,7 +835,6 @@
         </section>
         <!-- Projects Section End -->
 
-        
         <!-- Contact Section Start -->
         <section id="contact" class="pb-32 pt-36 dark:bg-slate-800">
             <div class="container">
